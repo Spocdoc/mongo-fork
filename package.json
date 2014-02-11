@@ -11,6 +11,5 @@
   "private": true,
   "dependencies": {
     "mongodb": "1.x"
-  },
-  "DEBUG local dependencies": {}
+  }
 }

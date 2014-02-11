@@ -3,9 +3,10 @@ class ObjectID
 
   constructor: (@hex) ->
     if !@hex?
-      id = []
-      `for (var i = 0; i < 24; ++i) id[i] = (Math.random()*16|0).toString(16);`
-      @hex = id.join('')
+      i = 0
+      h = ''
+      h += (Math.random()*16|0).toString(16) while ++i <= 24
+      @hex = h
 
   toString: -> @hex
   'toJSON': -> @hex
